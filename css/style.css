@@ -1,0 +1,22 @@
+/* * {
+  background-color: black;
+} */
+
+h1 {
+  color: aqua;
+}
+
+#pageHeader {
+  font-size: 24px;
+  text-align: center;
+  background-color: grey;
+}
+
+.headingLevel3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: cadetblue;
+}
+
+#firstH3Heading {
+  color: bisque;
+}
