@@ -85,3 +85,54 @@ li {
 .services:hover .dropdown {
   display: block;
 }
+
+/* responsive nav bar */
+
+/* style the checkbox and then hamburger menu icon */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* hamburger menu icon */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* CSS media queries */
+@media (max-width: 760px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: aqua;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+}
